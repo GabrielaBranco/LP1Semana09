@@ -9,7 +9,7 @@ namespace FilePower1
     {
         public static void Main(string[] file)
         {
-            string path = Path.Combine("FilePower1", file[0]);
+            string path = Path.Combine(file[0]);
             string contents = "";
 
             Queue<string> queue = new Queue<string>();
