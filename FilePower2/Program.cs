@@ -9,7 +9,7 @@ namespace FilePower2
         {
             string content = null;
 
-            using StreamWriter sw = new StreamWriter("FilePower2/"+fileName[0]);
+            using StreamWriter sw = new StreamWriter(fileName[0]);
 
             while ((content = Console.ReadLine()) != "")
             {
