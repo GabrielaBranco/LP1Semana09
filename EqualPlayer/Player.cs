@@ -12,12 +12,13 @@ namespace EqualPlayer
 
         public override int GetHashCode()
         {
-            return base.GetHashCode();
+            return Name.GetHashCode() ^ PClass.GetHashCode();
         }
 
-        /* public override bool Equals(object obj)
+        public override bool Equals(object obj)
         {
-            return
-        } */
+            Player other = obj as Player;
+            return this.Name.Equals(other.Name) && this.PClass.Equals(other.PClass);
+        }
     }
 }
